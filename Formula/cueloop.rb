@@ -13,30 +13,30 @@
 # The release workflow bumps `version` and the four sha256 values from the
 # release's checksums.txt via scripts/update-formula.ts and pushes here.
 class Cueloop < Formula
-  desc "Terminal review surface for coding agents: annotate plans and diffs, return a verdict"
+  desc "Terminal review surface for coding agents: annotate plans and diffs, send a message"
   homepage "https://cueloop.dev"
-  version "0.1.0-alpha.79"
+  version "0.1.0-alpha.80"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-darwin-arm64"
-      sha256 "c4e593f7101e1137a79a69bf9464d1470e561feaaa86b9302930f423f0d2b11d"
+      sha256 "edaa788841ba60aa9af3424c9fcf6ee9444a4e5bdd5f057227e390648acd5d2a"
     end
     on_intel do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-darwin-x64"
-      sha256 "b86e85f69c09409b4e139fcde62e45c3d2848d6312802ea373d4c4c09e7430ef"
+      sha256 "6f4c7d5cb4addd2e559b352ca8d68533e8965347360b240c82d1eb77a10fe7c8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-linux-arm64"
-      sha256 "110b946708d3f708ffb58b9ed66a3cdfdf1d3e987c2f1183f3e5c5d38628bdfe"
+      sha256 "666c59698dae9c8b11c23c86f4d0e3a4c00d1a3bc8af67dd4e9af70c85b3394b"
     end
     on_intel do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-linux-x64"
-      sha256 "29465b410b5b669fe92574890aedec2e1145a74a3efad94cd4c0dcb6cb863aef"
+      sha256 "e8a1b2729235c1418b7e1eef49c7d3506bf903154db29562b1f902ebbe6ef4ab"
     end
   end
 
