@@ -15,28 +15,28 @@
 class Cueloop < Formula
   desc "Terminal review surface for coding agents: annotate plans and diffs, send a message"
   homepage "https://cueloop.dev"
-  version "0.1.0-alpha.108"
+  version "0.1.0-alpha.109"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-darwin-arm64"
-      sha256 "c60e6a4590c78479ed382acac719f7b667ed87ae531c3fb2035636c079c203a9"
+      sha256 "ffbe4a1399d2367fc2a7eccc2b0af954ba883784bdc67752d8cd4ce8e8947941"
     end
     on_intel do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-darwin-x64"
-      sha256 "3704de03d92ff019eb5b0570c1ddbea64ca686ae53c51e42e024363eb32dbd8d"
+      sha256 "fbc83f97617b8466092e95eaf1d65b3711aebf90a67df2a2a092c37ed6424bb5"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-linux-arm64"
-      sha256 "bb8b256fac5bfd928f54fd9b0e6262192074ee01c38c3ead4c012e9b882f58d6"
+      sha256 "9cf62ea3383b2de39c07a72183504b7d4b2e163f7b80987255fdaa20c84bbe4c"
     end
     on_intel do
       url "https://github.com/mmurakaru/cueloop/releases/download/cueloop@#{version}/cueloop-linux-x64"
-      sha256 "1503d8338f35f1a2a74f94d9c3bf851158527006be2d5b36780cf0c078f505ae"
+      sha256 "7149ae9be712b82fa1137d0187327a2ca43c22e2a73b4aa6efa79c6233db092f"
     end
   end
 
